@@ -146,6 +146,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		window.open('${pageContext.request.contextPath }/user/tiaozhuan.html?pagename=pubu');            //打开新窗口
 		//location.href="${pageContext.request.contextPath }/jsp/pubu.jsp";           覆盖原来界面
 	}
+	
 	</script>
 </head>
 <body > 
