@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dancer.dao.UserDao">
+	
+	<sql id="cols">
+		id,
+		username,
+		password,
+		email,
+		salt,
+		uyul
+	</sql>
+	
+	<!-- 添加 -->
+		<insert id="insertUser" parameterType="com.dancer.entity.User" useGeneratedKeys="true" keyProperty="id">
+			insert into my_user values(#{id},#{username},#{password},#{email},#{salt},#{uyul})
+		</insert>
+	<!-- 验证登陆 -->
+		<select id="selectByName" parameterType="java.lang.String" resultType="com.dancer.entity.User">
+			select <include refid="cols"/>
+			from my_user
+			where username=#{username}
+		</select>
+	<!-- 修改密码 -->
+	<update id="Changepsw">
+		UPDATE my_user SET password = #{password}
+		WHERE username =#{username}
+	</update>
+</mapper>
