@@ -138,9 +138,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	        });
 	    });
 	});
-	function add(){
-		alert("dancer");
-	}
+
 	function tupian(img){
 		//alert(img.id);
 		window.open('${pageContext.request.contextPath }/user/tiaozhuan.html?pagename=pubu');            //打开新窗口
