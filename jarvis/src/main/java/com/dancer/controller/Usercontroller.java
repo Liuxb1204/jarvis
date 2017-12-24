@@ -42,13 +42,13 @@ public class Usercontroller {
 			session.setAttribute("name", user.getUsername());		
 			String name=(String) session.getAttribute("name");
 			System.out.println(name+"-------------已登录------------------->");
-			return "home";
+			return "dancer";
 		}
 	}
 	@RequestMapping("/skip")
 	public String userlogin(HttpSession session,HttpServletRequest request,String pagename){
 		if(pagename==null){
-			return "home";
+			return "dancer";
 		}	
 			//重定向页面
 			return "redirect:/"+pagename+".html";

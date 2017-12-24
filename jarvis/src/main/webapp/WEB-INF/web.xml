@@ -52,7 +52,7 @@
   
    <!-- 项目默认访问界面  -->
   <welcome-file-list>
-    <welcome-file>jsp/home.jsp</welcome-file>
+    <welcome-file>jsp/dancer.jsp</welcome-file>
   </welcome-file-list>  
   
   <!-- 配置404界面 -->

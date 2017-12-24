@@ -18,7 +18,7 @@ import com.common.entity.Page;
  */
 public interface BaseService <T> {
 	
-	//void setBaseDao();
+	void setBaseDao();
 
 	/**
 	 * É¾³ý

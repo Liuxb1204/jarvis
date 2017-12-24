@@ -49,7 +49,7 @@ public class LoginFilter implements Filter{
                 currentURL.length());  
         // 截取到当前文件名用于比较  
         HttpSession session = request.getSession(false);  
-        if (!"/home.jsp".equals(targetURL)) {// 判断当前页是否是重定向以后的登录页面页面，如果是就不做session的判断，防止出现死循环  
+        if (!"/dancer.jsp".equals(targetURL)) {// 判断当前页是否是重定向以后的登录页面页面，如果是就不做session的判断，防止出现死循环  
             if (session == null || session.getAttribute("user") == null) {  
                 // *用户登录以后需手动添加session  
                 System.out.println("request.getContextPath()="  
