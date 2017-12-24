@@ -50,8 +50,9 @@ public class Usercontroller {
 		if(pagename==null){
 			return "dancer";
 		}	
+		return pagename;
 			//重定向页面
-			return "redirect:/"+pagename+".html";
+			//return "redirect:/"+pagename+".html";
 	}
 	
 //	@RequestMapping("/login")

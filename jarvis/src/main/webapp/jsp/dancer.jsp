@@ -396,49 +396,36 @@ div#random {
 			<!--span class="no-csstransforms3d">CSS 3D transforms are not supported in your browser</span-->
 
 			<span class="no-csstransitions">CSS transitions are not
-
 				supported in your browser</span> <span class="note-ie">Sorry, only
-
 				modern browsers.</span>
-
 		</div>
-
-
-
 		</header>
 
+<script type="text/javascript">
 
+	function skip(a){
+		//alert(a.id);
+		window.open('${pageContext.request.contextPath }/user/skip.html?pagename='+a.id); //打开新窗口
+	}
 
+</script>
 
 
 
 
 		<div id="sb-container" class="sb-container">
-
-
-
 			<div>
-
 				<span class="sb-icon icon-cog"></span>
-
 				<h4>
-
-					<span>设置</span>
-
+					<span id="shezhi">设置</span>
 				</h4>
-
 			</div>
 
 			<div>
-
 				<span class="sb-icon icon-flight"></span>
-
 				<h4>
-
 					<span>飞机</span>
-
 				</h4>
-
 			</div>
 
 			<div>
@@ -477,16 +464,11 @@ div#random {
 
 			</div>
 
-			<div>
-
+			<div  id="love" onclick="skip(this)">
 				<span class="sb-icon icon-globe"></span>
-
 				<h4>
-
 					<span>世界</span>
-
 				</h4>
-
 			</div>
 
 			<div>
