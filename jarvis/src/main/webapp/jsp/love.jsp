@@ -58,7 +58,7 @@
 </head>
 <body>
 
-	<audio autoplay="autopaly"> <source src="music/wangji.mp3" type="audio/mp3" /> </audio>
+	<audio autoplay="autopaly"> <source src="music/xin.mp3" type="audio/mp3" /> </audio>
 
 	<div id="main">
 		<div id="error">

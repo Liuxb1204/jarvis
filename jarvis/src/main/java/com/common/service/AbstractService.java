@@ -54,12 +54,7 @@ public abstract class AbstractService<T> implements BaseService<T> {
 	}
 
 	public T queryByName(String name) {
-		System.out.println(name+"---------------");
-		System.out.println(baseDao);
-		T selectByName = baseDao.selectByName(name);
-		System.out.println(selectByName);
-
-		return selectByName;
+		return baseDao.selectByName(name);
 	}
 
 	public List<T> queryByPage(Page p) {

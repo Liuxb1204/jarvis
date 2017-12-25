@@ -1,5 +1,7 @@
 package com.dancer.service.impl;
 
+import javax.annotation.PostConstruct;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -18,12 +20,8 @@ public class UserServiceImpl extends AbstractService<User> implements UserServic
 	@Autowired
 	private UserDao userdao;
 	
-	public UserServiceImpl(){	
-		setBaseDao();
-	}
-	
+	@PostConstruct
 	public void setBaseDao() {
-		System.out.println(UserDao.class+"----------------"+userdao);
 		super.setBaseDao(userdao);
 	}
 

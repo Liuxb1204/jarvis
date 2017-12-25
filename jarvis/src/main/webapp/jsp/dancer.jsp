@@ -365,24 +365,13 @@ div#random {
 
 			}
 		</script>
-
-
-
-
-
 	</div>
 
 
 
 	<div class="container">
-
-
-
 		<header> <img src="images/dancer/fumikaLogo.png"
 			style="top: 100px;">
-
-
-
 		<div class="support-note">
 
 			<!-- let's check browser support with modernizr -->
