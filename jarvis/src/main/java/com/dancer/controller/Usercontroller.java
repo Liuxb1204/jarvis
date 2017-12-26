@@ -55,6 +55,52 @@ public class Usercontroller {
 			//return "redirect:/"+pagename+".html";
 	}
 	
+	int a=0;
+	int b=0;
+	int c=0;
+	int d=0;
+	int x = 0;
+	@RequestMapping("/yanzheng")
+	public @ResponseBody String yanZheng(String number,String value){
+		
+		if(number.equals("1")&&value.equals("1204")){
+			a = 1;x =a+b+c+d;
+			if(x==4){
+				a=0;b=0;c=0;d=0;
+				return "okk";
+			}
+			return "1ok";
+		}else if(number.equals("2")&&value.equals("高燕")){
+			b = 1;x =a+b+c+d;
+			if(x==4){
+				a=0;b=0;c=0;d=0;
+				return "okk";
+			}
+			return "2ok";
+		}else if(number.equals("3")&&value.equals("马泉营")){
+			c = 1;x =a+b+c+d;
+			if(x==4){
+				a=0;b=0;c=0;d=0;
+				return "okk";
+			}
+			return "3ok";
+		}else if(number.equals("4")&&value.equals("李亚丽")){
+			d = 1;x =a+b+c+d;
+			if(x==4){
+				a=0;b=0;c=0;d=0;
+				return "okk";
+			}
+			return "4ok";
+		}
+		return "no";		
+	}
+	
+	
+	
+	
+	
+
+	
 //	@RequestMapping("/login")
 //	public String login(HttpServletRequest request)throws Exception{
 //		//如果登陆失败从request中获取认证异常信息，shiroLoginFailure就是shiro异常类的全限定名
@@ -88,6 +134,7 @@ public class Usercontroller {
 			return queryName.getPassword();
 		}		
 	}
+
 	/*@RequestMapping("/zhuce")
 	public @ResponseBody String userZhuce(User user,String password1){
 		if(user.getUsername().equals("")||user.getPassword().equals("")){

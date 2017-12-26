@@ -453,7 +453,7 @@ div#random {
 
 			</div>
 
-			<div  id="love" onclick="skip(this)">
+			<div  id="heike" onclick="skip(this)">
 				<span class="sb-icon icon-globe"></span>
 				<h4>
 					<span>世界</span>
