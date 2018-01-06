@@ -49,6 +49,13 @@ public class Usercontroller {
 	public String userlogin(HttpSession session,HttpServletRequest request,String pagename){
 		if(pagename==null){
 			return "dancer";
+		}else if(pagename.equals("love")){	
+			if(x==4){
+				x=0;
+				return pagename;
+			}else{
+				return null;
+			}		
 		}	
 		return pagename;
 			//重定向页面
